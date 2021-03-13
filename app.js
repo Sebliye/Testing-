@@ -39,3 +39,21 @@
        return arr;
  };
  console.log(removeSecond([1,2,3]))
+
+
+ ///////
+ /* 2.Remove duplicate from array of objects */
+
+let xx = [
+     { name: 'mike', age: 2 },
+     { name: 'tim', age: 1 },
+     { name: 'mike', age: 2 },
+     { name: 'tim', age: 1 },
+    ];
+    
+/* using set */
+
+    let stringified=xx.map(elem=>JSON.stringify(elem));
+    let cc=[...new Set(stringified)];
+     cc=cc.map(elem=>JSON.parse(elem))
+    console.log(cc);
