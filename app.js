@@ -57,3 +57,10 @@ let xx = [
     let cc=[...new Set(stringified)];
      cc=cc.map(elem=>JSON.parse(elem))
     console.log(cc);
+
+    ////////////////
+
+    //in 1 interva it will display hello constinously until we clear the interval
+setInterval(()=>{
+console.log('hello')
+},1000)
